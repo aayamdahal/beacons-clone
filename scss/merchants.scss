@@ -1,0 +1,427 @@
+// VARIABLES
+$main-font: 'Poppins', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
+$main-color:  rgb(0,171,108);
+$py-main :  2rem 2rem;
+$py-secondary :  2rem 2rem;
+
+
+$circle-color: rgba(221, 221, 221, 0.582);
+$circle-color-secondary-main: #ddd;
+$circle-color-secondary: rgba(221, 221, 221, 0.425);
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+body::selection{
+  color: white;
+  background: #0089f2;
+}
+body::-webkit-scrollbar{
+  width: 16px;
+}
+body::-webkit-scrollbar-track{
+  background: #e6e6e6;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb{
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: $main-color;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: $main-color;
+}
+
+.changelog-navbar{
+transition: all 0.7s;
+ position: fixed;
+ height: 80px;
+ overflow: hidden;
+ top: 0;
+ display: flex;
+ align-items: center;
+ background:rgba(177, 61, 61, 0);
+ width: 104%; 
+
+ .changelog-logo{
+   background: url(/img/Capture-removebg-preview.png) no-repeat 50% 50%;
+  background-size: contain;
+  width: 120px;
+  height: 40px;
+  float: left;
+  margin-left: 20px;
+ }
+
+ .menu{
+   position: absolute;
+   right: 20px;
+   
+   a{
+     display: inline-block;
+     font-weight: 500;
+     color: #000;
+     text-decoration: none;
+     font-family: $main-font;
+      margin-right: 55px;
+      transition: all 0.3s;
+     &:hover{
+       transform: translateY(-5px);
+       color: $main-color;
+       border-bottom: 2px solid $main-color;
+     }
+
+     &:active{
+       transform: translateY(3px);
+     }
+
+   }
+ }
+ .changelog-btn{
+   display: none;
+   position: absolute;
+   right: 20px;
+
+   .clg-hamburger{
+     display: block;
+     margin: 5px;
+     width: 23px;
+     height: 2px;
+     background: #000;
+   }
+ }
+}
+.show{
+  animation: dropdrop ease 0.5s;
+  max-height: 550px;
+}
+@keyframes dropdrop {
+0%{
+  opacity: 0;
+  transform: translateY(-200px);
+}
+
+50%{
+  opacity: 0.7;
+}
+100%{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+  }
+
+.top-area{
+  width: 100vw;
+  padding: 4rem;
+  margin-top: 4rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  .left-part{
+    margin: 1rem;
+    width: 50vw;
+    .shopify{
+      color: #888;
+      font-family: $main-font;
+      font-size: 0.8rem;
+    }
+    
+    p{
+      font-size: 3rem;
+      line-height: 1;
+      font-family: $main-font;
+      font-weight: 500;
+      span{
+        color: $main-color;
+      }
+    }
+    .shopify-desc{
+      margin: 2rem 0rem;
+
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+    .install{
+      font-size: 1rem;
+    }
+    .shopify-logo{
+      margin: 0.8rem;   
+    }
+  }
+  .right-part{
+    width: 50vw;
+    .shopify-img{
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+  }
+}
+
+.brand-ambassadors{
+  padding: 4rem;
+  text-align: center;
+  h4{
+    font-size: 2rem;
+    font-family: $main-font;
+  }
+  p{
+    font-family: $main-font;
+    font-size: 1rem;
+  }
+
+  .brand-items{
+    padding: 4rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-content: center;
+
+    i{
+      margin-bottom: 1rem;
+      color: $main-color;
+    }
+    h4{
+      margin-bottom: 1rem;
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 1rem;
+      font-weight: 300;
+      color: #666;
+    }
+    .each-brand{
+      margin: 2rem;
+    }
+  }
+}
+.influencers{
+  padding: 2rem;
+  h4{
+    font-size: 2rem;
+    font-family: $main-font;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  
+  
+  }
+  
+
+    .each-influencers{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+     .individual-influencer-1{
+       display: flex;
+       align-items: flex-end;
+       justify-content: space-between;
+       height: 40vh;
+       padding: 0.5rem 1.2rem;
+       border-radius: 35px;
+       background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 35%),url(/img/influencer-1.png) no-repeat center center/cover;
+
+       .individual-name{
+         font-family: $main-font;
+         font-size: 1rem;
+         color: white;
+        font-weight: 400;
+       }
+       .individual-hits{
+         color:#d1e3ff;
+         font-size: $main-font;
+         font-size: 1rem;
+         font-weight: 600;
+
+       }
+
+     }
+     .individual-influencer-2{
+      border-radius: 35px;
+      display: flex;
+       align-items: flex-end;
+       justify-content: space-between;
+       height: 40vh;
+       padding: 0.5rem 1.2rem;
+       background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 35%),url(/img/influencer-2.png) no-repeat center center/cover;
+
+       .individual-name{
+        font-family: $main-font;
+        font-size: 1rem;
+        color: white;
+        font-weight: 400;
+      }
+      .individual-hits{
+        color:#d1e3ff;
+        font-size: $main-font;
+        font-size: 1rem;
+        font-weight: 600;
+
+      }
+     }
+     .individual-influencer-3{
+      height: 40vh;
+       display: flex;
+       padding: 0.5rem 1.2rem;
+       align-items: flex-end;
+       justify-content: space-between;
+       border-radius: 35px;
+       background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 35%),url(/img/influencer-3.png) no-repeat center center/cover;
+       .individual-name{
+        font-family: $main-font;
+        font-size: 1rem;
+        color: white;
+        font-weight: 400; 
+      }
+      .individual-hits{
+        color:#d1e3ff;
+        font-size: $main-font;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+     }
+     .individual-influencer-4{
+      height: 40vh;
+       border-radius: 35px;
+       display: flex;
+       padding: 0.5rem 1.2rem;
+       align-items: flex-end;
+       justify-content: space-between;
+       background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 35%),url(/img/influencer-4.png) no-repeat center center/cover;
+       .individual-name{
+        font-family: $main-font;
+        font-size: 1rem;
+        color:  white;
+        font-weight: 400;
+      }
+      .individual-hits{
+        color:#d1e3ff;
+        font-size: $main-font;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+     }
+     a{
+       text-decoration: none;
+     }
+     .influencer-margin{
+       margin-bottom: 1rem;
+     }
+   }
+}
+
+.marketing{
+  width: 100vw;
+  padding: 4rem;
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  .marketing-left-part{
+    width: 50vw;
+    h4{
+      font-size: 2rem;
+      font-family: $main-font;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .marketing-right-part{
+    width: 40vw;
+    h6{
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: $main-font;
+    }
+    p{
+      font-size: 0.8rem;
+      font-family: $main-font;
+      font-weight: 300;
+    }
+    div{
+      margin: 1rem;
+    }
+    .logos-shopify{
+      display: flex;
+      align-content: center;
+      gap: 0rem;
+      .shopify-logo-marketing-2{
+        margin: -2rem;
+        transform: scale(0.5);
+      }
+      
+    }   
+  }
+}
+
+.footer-merchants{
+  background-color: rgba(204, 204, 204, 0.13);
+  padding: 4rem;
+  font-family: $main-font;
+  a{
+    color: black;   
+     text-decoration: none;
+}
+  .footer-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+  align-items: center;
+  }
+  
+  .company-info{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .company-resources{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .company-support{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .backedby{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    a{
+      text-decoration: underline;
+    }
+    .socials{
+      
+      i{
+        transform: scale(1.3);   
+        margin: 0.5rem
+      }
+    }
+    
+  }
+
+}
+
+
+
+
+// MEDIA QUERIES
+@import 'media(ipad)';
+@import 'media2(iphone)';
+@import 'media3';

@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+ @import "media(ipad)";
+ @import "media2(iphone)";
+ @import "media3";
+ *, *::after, *:before {
+	 padding: 0;
+	 margin: 0;
+	 box-sizing: border-box;
+}
+ body {
+	 background: linear-gradient(90deg, rgba(204, 204, 204, 0.6) 0%, rgba(71, 67, 67, 0.6) 100%);
+	 font-family: "Poppins", sans-serif;
+	 padding: 1rem 2rem;
+	 display: flex;
+	 justify-content: center;
+	 font-size: 62.5%;
+	 overflow-x: hidden;
+}
+ a {
+	 text-decoration: none;
+}
+ h1, p {
+	 text-align: center;
+}
+ label {
+	 font-size: 1rem;
+	 color: black;
+	 display: block;
+	 margin: 1em 0 0.2em;
+}
+/* single-line text, checkbox, and button */
+ input, select, textarea {
+	 display: block;
+	 width: 100%;
+	 padding: 0.3em;
+	 font-size: 20px;
+	 background-color: #fbfbfb;
+	 border: solid 1px #ccc;
+	 resize: vertical;
+}
+ textarea {
+	 min-height: 180px;
+}
+ select {
+	 color: indigo;
+}
+ option {
+	 color: blue;
+	 background: lavenderBlush;
+}
+ input[type="checkbox"] {
+	 display: inline;
+	 width: auto;
+	 color: red;
+}
+ input[type="submit"] {
+	 background: #00ab6c;
+	 margin: 1em 0 0;
+	 color: black;
+	 border: none;
+	 border-radius: 8px;
+	 transition: all 0.3s ease-out;
+}
+ input:focus, input:hover, select:focus, select:hover, textarea:focus, textarea:hover {
+	 background: lavenderBlush;
+}
+/* hover and focus states */
+ input[type="submit"]:hover, input[type="submit"]:focus {
+	 background: #007e50;
+	 outline: none;
+}
+ @media screen and (min-width: 600px) {
+	/* make the form 2 columns */
+	 form:after {
+		 content: "";
+		 display: block;
+		 clear: both;
+	}
+	 .column {
+		 width: 50%;
+		 padding: 1em;
+		 float: left;
+	}
+}
+ .form-text {
+	 font-size: 1.2rem;
+}
+ .contact-btn {
+	 color: black;
+	 font-family: "Poppins", sans-serif;
+	 width: 100%;
+	 font-size: 1.2rem;
+	 border: none;
+	 border-radius: 20px;
+	 margin-top: 1rem;
+	 background-color: #00ab6c;
+	 padding: 0.5rem 1rem;
+}
+ .rem-color {
+	 color: black;
+}
+ .logo-contact {
+	 display: block;
+	 margin: 0 auto;
+}
+ 

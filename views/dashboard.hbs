@@ -1,0 +1,40 @@
+<body>
+<h6 class="dashboard">Dashboard <i class="fas fa-cog"></i></h6>
+<h3 class="welcome"><i class="far fa-user"></i> Welcome <span class="user-name"> {{name}} </span></h3>
+<p class="story-para">Here are your stories</p>
+{{#if stories}}
+<table class="striped">
+    <thead>
+        <tr>
+            <th class="table-content">Title</th>
+            <th class="table-content">Date</th>
+            <th class="table-content">Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="tbody">
+        {{#each stories}}
+        <tr class="tr">
+            <td><a href="/stories/{{_id}}">{{title}}</a></td>
+            <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
+            <td><span class="dash-status">{{status}}</span></td>
+            <td>
+                <a href="/stories/edit/{{_id}}" class="btn btn-float">
+                    <i class="fas fa-edit"></i>
+                </a>
+
+                <form action="/stories/{{_id}}" method="POST" id="delete-form">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn red">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+<p>You have not created any stories</p>
+{{/if}}
+</body>

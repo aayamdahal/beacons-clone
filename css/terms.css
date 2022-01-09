@@ -1,0 +1,42 @@
+*,
+*::after,
+*:before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.terms-container {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.terms-content {
+  padding: 2rem 5rem;
+}
+
+.terms-content span {
+  font-size: 1rem;
+}
+
+.terms-content h1 {
+  font-size: 2rem;
+}
+
+.terms-content p {
+  font-size: 1rem;
+}
+
+.terms-content h2 {
+  font-size: 1rem;
+}

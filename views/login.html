@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Server auth</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js" defer ></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js" defer></script>
+</head>
+<body>
+    <main>
+      <h3><i class="fas fa-book-reader"></i> StoryBooks</h3>
+      <div class="section">
+          <p class="lead">Create public and private stories from your life</p>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+          <a href="/auth/google" class="btn red darken-1">
+              <i class="fab fa-google left"></i> Log In With Google
+          </a>
+      </div>
+        <!-- <script>
+            window.addEventListener("DOMContentLoaded", ()=> {
+                var firebaseConfig = {
+                            apiKey: "AIzaSyDkFrGVVYH6JdSG5IfRmDjtqRAKCCunfug",
+                            authDomain: "beacons-c9136.firebaseapp.com",
+                            databaseURL: "https://beacons-c9136.firebaseio.com",
+                            projectId: "beacons-c9136",
+                            storageBucket: "beacons-c9136.appspot.com",
+                            messagingSenderId: "2191567432",
+                            appId: "1:2191567432:web:034fb9b076e9d1c00a467d",
+                            measurementId: "G-73LFJ2NTFB"
+                        };
+                        // Initialize Firebase
+                        firebase.initializeApp(firebaseConfig);
+                        firebase.analytics();
+
+                        firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE);
+                        document
+            .getElementById("login")
+            .addEventListener("submit", (event) => {
+              event.preventDefault();
+              const login = event.target.login.value;
+              const password = event.target.password.value;
+
+              firebase
+                .auth()
+                .signInWithEmailAndPassword(login, password)
+                .then(({ user }) => {
+                  return user.getIdToken().then((idToken) => {
+                    return fetch("/sessionLogin", {
+                      method: "POST",
+                      headers: {
+                        Accept: "application/json",
+                        "Content-Type": "application/json",
+                        "CSRF-Token": Cookies.get("XSRF-TOKEN"),
+                      },
+                      body: JSON.stringify({ idToken }),
+                    });
+                  });
+                })
+                .then(() => {
+                  return firebase.auth().signOut();
+                })
+                .then(() => {
+                  window.location.assign("/profile");
+                });
+              return false;
+            });
+        });
+        </script> -->
+    </main>
+</body>
+</html>

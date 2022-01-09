@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='icon' href='../img/selcouth.png' type='img'>
+  <link rel="stylesheet" href="/css/paper.css">
+  <title>Selcouth || Shop</title>
+</head>
+<body>
+  <div class="container">
+    <!-- first-section -->
+    <section class="first-section">
+      <div class="navbar">
+        <!-- logo -->
+          <a href="/" class="logo"><img id="selcouth" src="/img/selcouth.png"  alt=""></a>
+          <a href="/" class="logo-only"><img id="selcouth5" src="/img/selcouth.png" alt=""></a>
+        <!-- navbar-items -->
+        <div class="navbar-items">
+          <a href="/blogs" class="navbar-item">Blog</a>
+          <a href="/gallery" class="navbar-item">Gallery</a>
+          <a href="/shop" class="navbar-item">Shop</a>
+          <a href="/merchants"class="navbar-item">Merchants</a>
+          </div>
+      </div>
+        <!-- signin button -->
+        <div class="drop-down-container">
+          <div class="signin">
+            <a href="/signup">Sign In</a>
+          </div> 
+        </div>
+       
+
+        <!-- menubar -->
+         <div class="dropdown" >
+           <button  onclick="show_hide()" class="button">&#9776;</button>
+           <!-- drop-content -->
+           <div style="display: none;" id="drop-content" >
+            <a href="/blogs">Blog</a>
+             <a href="/gallery">Gallery</a>
+             <a href="/shop">Shop</a>
+             <a href="/merchants">Merchants</a>         
+           </div>
+         </div>
+    </section>
+    <!-- second section -->
+
+   <section class="second-section">   
+      <div class="circle circle-1"></div>    
+      <div class="circle circle-2"></div>    
+      <div class="circle circle-3"></div>    
+    </section>
+
+    <div class="shop-top-area">
+      <div class="shop-right-part">
+        <a href="/shop">The Shop <i class="fas fa-chevron-right"></i></a>
+        <h4 class="shop-heading " id="shop-heading-sm">Paper & Novelty</h4>
+      </div>
+      <div class="shop-left-part">
+        <select class="select">
+          <option selected >Newest arrivals</option>
+          <option value="Name1">Name: A &#8594; Z</option>
+          <option value="Name2">Name: Z &#8594; A</option>
+          <option value="Price low">Price: Low &#8594; High</option>
+          <option value="Price high">Price: High &#8594; Low</option>
+          <option value="Oldest products">Oldest products</option>
+          <option value="Commission low">Commission: Low &#8594; High</option>
+          <option value="Commission high">Commission: High &#8594; Low</option>
+        </select>
+      </div>
+    </div>
+    
+    <section class="shop-content">
+
+      <!-- shop-item-1 -->
+      <div class="shop-item">
+        <div class="shop-image">
+          <img src="/img/bags-10.jpg" class="modal-open" data-modal="modal1"></img>
+          <div class="add-product modal-open" data-modal="modal10">
+            <span><i class="fas fa-plus fa-2x"></i></span>
+           <h6 class="add-product-title">Add product</h6>       
+          </div>     
+        </div>            
+        <div class="shop-item-description">          
+          <h5 class="shop-item-name">Wash Your Hands</h5>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <div class="shop-item-commission">
+            <h6>You earn</h6>
+            <h6>$0.45</h6>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- shop-item-1-modal -1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="icon modal-close">&#10005;</button>
+      <div class="modal-body">
+        <section id="section-slider">
+          <div id='slider-container'>
+                  <div id="slider">
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-18.jpg">
+                         <p class="img-number">1/2</p> 
+                      </div>
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-19.jpg">
+                         <p class="img-number">2/2</p> 
+                      </div>               
+                  </div>
+              <button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
+              <button id="next"><i class="fas fa-chevron-right fa-2x"></i></button>
+          </div>
+      </section> 
+        <div class="shop-popup-content">
+          <h6 class="popup-name">Wash your Hands</h6>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <p>
+            Please? Submitted by Lilly Luke. <br><br>
+
+            Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more! <br><br>
+            
+            Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color. <br><br>
+            
+            Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag.  <br><br>
+            
+            Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping. <br><br>
+            
+            The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more! <br><br>
+            
+          </p>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+          <button class="shop-popup-btn">Sign In</button>
+          <div class="no-account">
+            <p>Don't have an account?</p>
+            <a href="/">Join the waitlist</a>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+
+
+<!-- add product popup modal -->
+
+  <div class="modal" id="modal10">
+    <div class="modal-content model-content-add-product">
+      <button class="icon modal-close">&#10005;</button>
+      <div class="modal-body">       
+        <div class="add-product-popup">
+          <p>If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+          <button class="add-product-popup-btn">Sign In</button>
+          <div class="no-account">
+            <p>Don't have an account?</p>
+            <a href="/">Join the waitlist</a>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <!-- shop-item-2 -modal-2 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-11.jpg" class="modal-open" data-modal="modal2"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Cross Sugar Skull</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal2">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-1">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-20.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-21.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+              </div>
+          <button id="prev-1"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-1"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Cross Sugar Skull</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>TA beautifully intricate sugar skull adorned with a cross. <br> <br>
+
+        Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!  <br> <br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.  <br> <br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.  <br> <br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!  <br> <br>
+        </p>
+        
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>6.00</h6>
+      </div>
+      <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+  
+
+  <!-- shop-item-3 -modal-3 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-12.jpg" class="modal-open" data-modal="modal3"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Nerd</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal3">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-2">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-22.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-23.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+                         
+              </div>
+          <button id="prev-2"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-2"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Nerd</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>Our custom designed totes are perfect for a weekend gateway</p>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <p class="sign-in-desc">Only true nerds actually know what NASA stands for... Or people who are really into science. <br><br>
+
+        (Basically the same thing, right?) <br><br>
+        
+        ((It's The National Aeronautics and Space Administration))<br><br>
+        
+        Product Info: <a href="#"> Click here</a> to learn all about Wood Stickers™ – how they’re made, what you can use them for, and <a href="#">more!</a> <br><br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+        
+        Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately 3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+        
+      </p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+
+<!-- shop-item-4 modal-4 -->
+
+<div class="shop-item">
+  <div class="shop-image">
+    <img src="/img/bags-13.jpg" class="modal-open" data-modal="modal4"></img>
+    <div class="add-product modal-open" data-modal="modal10">
+      <span><i class="fas fa-plus fa-2x"></i></span>
+     <h6 class="add-product-title">Add product</h6>       
+    </div>     
+  </div>            
+  <div class="shop-item-description">          
+    <h5 class="shop-item-name">Mother Earth</h5>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <div class="shop-item-commission">
+      <h6>You earn</h6>
+      <h6>$0.45</h6>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal4">
+<div class="modal-content">
+<button class="icon modal-close">&#10005;</button>
+<div class="modal-body">
+  <section id="section-slider">
+    <div id='slider-container'>
+            <div id="slider-3">
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-24.jpg">
+                   <p class="img-number">1/2</p> 
+                </div>
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-25.jpg">
+                   <p class="img-number">2/2</p> 
+                </div>                                     
+            </div>
+        <button id="prev-3"><i class="fas fa-chevron-left fa-2x"></i></button>
+        <button id="next-3"><i class="fas fa-chevron-right fa-2x"></i></button>
+    </div>
+</section> 
+  <div class="shop-popup-content">
+    <h6 class="popup-name">Mother Earth</h6>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <p>We are committed to creating a sustainable future, both with our products as well as our business practices. We kind of got a thing for wood so we do everything we can to make sure there’s plenty of it for years to come! <br><br>
+
+      Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!<br><br>
+      
+      Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+      
+      Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+      
+      Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+      
+      The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+      
+    </p>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <button class="shop-popup-btn">Sign In</button>
+    <div class="no-account">
+      <p>Don't have an account?</p>
+      <a href="/">Join the waitlist</a>
+    </div>
+  </div>
+</div>     
+</div>
+</div>
+
+
+
+<!-- shop-item-4 modal-4 -->
+
+<div class="shop-item">
+  <div class="shop-image">
+    <img src="/img/bags-13.jpg" class="modal-open" data-modal="modal4"></img>
+    <div class="add-product modal-open" data-modal="modal10">
+      <span><i class="fas fa-plus fa-2x"></i></span>
+     <h6 class="add-product-title">Add product</h6>       
+    </div>     
+  </div>            
+  <div class="shop-item-description">          
+    <h5 class="shop-item-name">Mother Earth</h5>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <div class="shop-item-commission">
+      <h6>You earn</h6>
+      <h6>$0.45</h6>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal4">
+<div class="modal-content">
+<button class="icon modal-close">&#10005;</button>
+<div class="modal-body">
+  <section id="section-slider">
+    <div id='slider-container'>
+            <div id="slider-3">
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-24.jpg">
+                   <p class="img-number">1/2</p> 
+                </div>
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-25.jpg">
+                   <p class="img-number">2/2</p> 
+                </div>                                     
+            </div>
+        <button id="prev-3"><i class="fas fa-chevron-left fa-2x"></i></button>
+        <button id="next-3"><i class="fas fa-chevron-right fa-2x"></i></button>
+    </div>
+</section> 
+  <div class="shop-popup-content">
+    <h6 class="popup-name">Mother Earth</h6>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <p>We are committed to creating a sustainable future, both with our products as well as our business practices. We kind of got a thing for wood so we do everything we can to make sure there’s plenty of it for years to come! <br><br>
+
+      Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!<br><br>
+      
+      Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+      
+      Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+      
+      Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+      
+      The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+      
+    </p>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <button class="shop-popup-btn">Sign In</button>
+    <div class="no-account">
+      <p>Don't have an account?</p>
+      <a href="/">Join the waitlist</a>
+    </div>
+  </div>
+</div>     
+</div>
+</div>
+  <!-- shop-item-3 -modal-3 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-12.jpg" class="modal-open" data-modal="modal3"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Nerd</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal3">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-2">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-22.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-23.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+                         
+              </div>
+          <button id="prev-2"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-2"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Nerd</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>Our custom designed totes are perfect for a weekend gateway</p>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <p class="sign-in-desc">Only true nerds actually know what NASA stands for... Or people who are really into science. <br><br>
+
+        (Basically the same thing, right?) <br><br>
+        
+        ((It's The National Aeronautics and Space Administration))<br><br>
+        
+        Product Info: <a href="#"> Click here</a> to learn all about Wood Stickers™ – how they’re made, what you can use them for, and <a href="#">more!</a> <br><br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+        
+        Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately 3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+        
+      </p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+
+
+      <!-- shop-item-1 -->
+      <div class="shop-item">
+        <div class="shop-image">
+          <img src="/img/bags-10.jpg" class="modal-open" data-modal="modal1"></img>
+          <div class="add-product modal-open" data-modal="modal10">
+            <span><i class="fas fa-plus fa-2x"></i></span>
+           <h6 class="add-product-title">Add product</h6>       
+          </div>     
+        </div>            
+        <div class="shop-item-description">          
+          <h5 class="shop-item-name">Wash Your Hands</h5>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <div class="shop-item-commission">
+            <h6>You earn</h6>
+            <h6>$0.45</h6>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- shop-item-1-modal -1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="icon modal-close">&#10005;</button>
+      <div class="modal-body">
+        <section id="section-slider">
+          <div id='slider-container'>
+                  <div id="slider">
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-18.jpg">
+                         <p class="img-number">1/2</p> 
+                      </div>
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-19.jpg">
+                         <p class="img-number">2/2</p> 
+                      </div>               
+                  </div>
+              <button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
+              <button id="next"><i class="fas fa-chevron-right fa-2x"></i></button>
+          </div>
+      </section> 
+        <div class="shop-popup-content">
+          <h6 class="popup-name">Wash your Hands</h6>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <p>
+            Please? Submitted by Lilly Luke. <br><br>
+
+            Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more! <br><br>
+            
+            Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color. <br><br>
+            
+            Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag.  <br><br>
+            
+            Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping. <br><br>
+            
+            The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more! <br><br>
+            
+          </p>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+          <button class="shop-popup-btn">Sign In</button>
+          <div class="no-account">
+            <p>Don't have an account?</p>
+            <a href="/">Join the waitlist</a>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <!-- shop-item-2 -modal-2 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-11.jpg" class="modal-open" data-modal="modal2"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Cross Sugar Skull</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal2">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-1">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-20.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-21.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+              </div>
+          <button id="prev-1"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-1"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Cross Sugar Skull</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>TA beautifully intricate sugar skull adorned with a cross. <br> <br>
+
+        Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!  <br> <br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.  <br> <br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.  <br> <br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!  <br> <br>
+        </p>
+        
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>6.00</h6>
+      </div>
+      <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+  
+
+
+
+
+<!-- shop-item-4 modal-4 -->
+
+<div class="shop-item">
+  <div class="shop-image">
+    <img src="/img/bags-13.jpg" class="modal-open" data-modal="modal4"></img>
+    <div class="add-product modal-open" data-modal="modal10">
+      <span><i class="fas fa-plus fa-2x"></i></span>
+     <h6 class="add-product-title">Add product</h6>       
+    </div>     
+  </div>            
+  <div class="shop-item-description">          
+    <h5 class="shop-item-name">Mother Earth</h5>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <div class="shop-item-commission">
+      <h6>You earn</h6>
+      <h6>$0.45</h6>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal4">
+<div class="modal-content">
+<button class="icon modal-close">&#10005;</button>
+<div class="modal-body">
+  <section id="section-slider">
+    <div id='slider-container'>
+            <div id="slider-3">
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-24.jpg">
+                   <p class="img-number">1/2</p> 
+                </div>
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-25.jpg">
+                   <p class="img-number">2/2</p> 
+                </div>                                     
+            </div>
+        <button id="prev-3"><i class="fas fa-chevron-left fa-2x"></i></button>
+        <button id="next-3"><i class="fas fa-chevron-right fa-2x"></i></button>
+    </div>
+</section> 
+  <div class="shop-popup-content">
+    <h6 class="popup-name">Mother Earth</h6>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <p>We are committed to creating a sustainable future, both with our products as well as our business practices. We kind of got a thing for wood so we do everything we can to make sure there’s plenty of it for years to come! <br><br>
+
+      Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!<br><br>
+      
+      Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+      
+      Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+      
+      Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+      
+      The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+      
+    </p>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <button class="shop-popup-btn">Sign In</button>
+    <div class="no-account">
+      <p>Don't have an account?</p>
+      <a href="/">Join the waitlist</a>
+    </div>
+  </div>
+</div>     
+</div>
+</div>
+  <!-- shop-item-3 -modal-3 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-12.jpg" class="modal-open" data-modal="modal3"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Nerd</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal3">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-2">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-22.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-23.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+                         
+              </div>
+          <button id="prev-2"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-2"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Nerd</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>Our custom designed totes are perfect for a weekend gateway</p>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <p class="sign-in-desc">Only true nerds actually know what NASA stands for... Or people who are really into science. <br><br>
+
+        (Basically the same thing, right?) <br><br>
+        
+        ((It's The National Aeronautics and Space Administration))<br><br>
+        
+        Product Info: <a href="#"> Click here</a> to learn all about Wood Stickers™ – how they’re made, what you can use them for, and <a href="#">more!</a> <br><br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+        
+        Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately 3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+        
+      </p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+
+
+      <!-- shop-item-1 -->
+      <div class="shop-item">
+        <div class="shop-image">
+          <img src="/img/bags-10.jpg" class="modal-open" data-modal="modal1"></img>
+          <div class="add-product modal-open" data-modal="modal10">
+            <span><i class="fas fa-plus fa-2x"></i></span>
+           <h6 class="add-product-title">Add product</h6>       
+          </div>     
+        </div>            
+        <div class="shop-item-description">          
+          <h5 class="shop-item-name">Wash Your Hands</h5>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <div class="shop-item-commission">
+            <h6>You earn</h6>
+            <h6>$0.45</h6>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- shop-item-1-modal -1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="icon modal-close">&#10005;</button>
+      <div class="modal-body">
+        <section id="section-slider">
+          <div id='slider-container'>
+                  <div id="slider">
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-18.jpg">
+                         <p class="img-number">1/2</p> 
+                      </div>
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-19.jpg">
+                         <p class="img-number">2/2</p> 
+                      </div>               
+                  </div>
+              <button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
+              <button id="next"><i class="fas fa-chevron-right fa-2x"></i></button>
+          </div>
+      </section> 
+        <div class="shop-popup-content">
+          <h6 class="popup-name">Wash your Hands</h6>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <p>
+            Please? Submitted by Lilly Luke. <br><br>
+
+            Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more! <br><br>
+            
+            Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color. <br><br>
+            
+            Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag.  <br><br>
+            
+            Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping. <br><br>
+            
+            The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more! <br><br>
+            
+          </p>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+          <button class="shop-popup-btn">Sign In</button>
+          <div class="no-account">
+            <p>Don't have an account?</p>
+            <a href="/">Join the waitlist</a>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <!-- shop-item-2 -modal-2 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-11.jpg" class="modal-open" data-modal="modal2"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Cross Sugar Skull</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal2">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-1">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-20.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-21.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+              </div>
+          <button id="prev-1"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-1"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Cross Sugar Skull</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>TA beautifully intricate sugar skull adorned with a cross. <br> <br>
+
+        Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!  <br> <br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.  <br> <br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.  <br> <br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!  <br> <br>
+        </p>
+        
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>6.00</h6>
+      </div>
+      <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+  
+
+
+
+
+<!-- shop-item-4 modal-4 -->
+
+<div class="shop-item">
+  <div class="shop-image">
+    <img src="/img/bags-13.jpg" class="modal-open" data-modal="modal4"></img>
+    <div class="add-product modal-open" data-modal="modal10">
+      <span><i class="fas fa-plus fa-2x"></i></span>
+     <h6 class="add-product-title">Add product</h6>       
+    </div>     
+  </div>            
+  <div class="shop-item-description">          
+    <h5 class="shop-item-name">Mother Earth</h5>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <div class="shop-item-commission">
+      <h6>You earn</h6>
+      <h6>$0.45</h6>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal4">
+<div class="modal-content">
+<button class="icon modal-close">&#10005;</button>
+<div class="modal-body">
+  <section id="section-slider">
+    <div id='slider-container'>
+            <div id="slider-3">
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-24.jpg">
+                   <p class="img-number">1/2</p> 
+                </div>
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-25.jpg">
+                   <p class="img-number">2/2</p> 
+                </div>                                     
+            </div>
+        <button id="prev-3"><i class="fas fa-chevron-left fa-2x"></i></button>
+        <button id="next-3"><i class="fas fa-chevron-right fa-2x"></i></button>
+    </div>
+</section> 
+  <div class="shop-popup-content">
+    <h6 class="popup-name">Mother Earth</h6>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <p>We are committed to creating a sustainable future, both with our products as well as our business practices. We kind of got a thing for wood so we do everything we can to make sure there’s plenty of it for years to come! <br><br>
+
+      Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!<br><br>
+      
+      Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+      
+      Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+      
+      Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+      
+      The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+      
+    </p>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <button class="shop-popup-btn">Sign In</button>
+    <div class="no-account">
+      <p>Don't have an account?</p>
+      <a href="/">Join the waitlist</a>
+    </div>
+  </div>
+</div>     
+</div>
+</div>
+  <!-- shop-item-3 -modal-3 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-12.jpg" class="modal-open" data-modal="modal3"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Nerd</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal3">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-2">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-22.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-23.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+                         
+              </div>
+          <button id="prev-2"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-2"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Nerd</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>Our custom designed totes are perfect for a weekend gateway</p>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <p class="sign-in-desc">Only true nerds actually know what NASA stands for... Or people who are really into science. <br><br>
+
+        (Basically the same thing, right?) <br><br>
+        
+        ((It's The National Aeronautics and Space Administration))<br><br>
+        
+        Product Info: <a href="#"> Click here</a> to learn all about Wood Stickers™ – how they’re made, what you can use them for, and <a href="#">more!</a> <br><br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+        
+        Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately 3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+        
+      </p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+
+
+      <!-- shop-item-1 -->
+      <div class="shop-item">
+        <div class="shop-image">
+          <img src="/img/bags-10.jpg" class="modal-open" data-modal="modal1"></img>
+          <div class="add-product modal-open" data-modal="modal10">
+            <span><i class="fas fa-plus fa-2x"></i></span>
+           <h6 class="add-product-title">Add product</h6>       
+          </div>     
+        </div>            
+        <div class="shop-item-description">          
+          <h5 class="shop-item-name">Wash Your Hands</h5>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <div class="shop-item-commission">
+            <h6>You earn</h6>
+            <h6>$0.45</h6>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- shop-item-1-modal -1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="icon modal-close">&#10005;</button>
+      <div class="modal-body">
+        <section id="section-slider">
+          <div id='slider-container'>
+                  <div id="slider">
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-18.jpg">
+                         <p class="img-number">1/2</p> 
+                      </div>
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-19.jpg">
+                         <p class="img-number">2/2</p> 
+                      </div>               
+                  </div>
+              <button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
+              <button id="next"><i class="fas fa-chevron-right fa-2x"></i></button>
+          </div>
+      </section> 
+        <div class="shop-popup-content">
+          <h6 class="popup-name">Wash your Hands</h6>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <p>
+            Please? Submitted by Lilly Luke. <br><br>
+
+            Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more! <br><br>
+            
+            Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color. <br><br>
+            
+            Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag.  <br><br>
+            
+            Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping. <br><br>
+            
+            The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more! <br><br>
+            
+          </p>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+          <button class="shop-popup-btn">Sign In</button>
+          <div class="no-account">
+            <p>Don't have an account?</p>
+            <a href="/">Join the waitlist</a>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <!-- shop-item-2 -modal-2 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-11.jpg" class="modal-open" data-modal="modal2"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Cross Sugar Skull</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal2">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-1">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-20.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-21.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+              </div>
+          <button id="prev-1"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-1"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Cross Sugar Skull</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>TA beautifully intricate sugar skull adorned with a cross. <br> <br>
+
+        Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!  <br> <br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.  <br> <br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.  <br> <br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!  <br> <br>
+        </p>
+        
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>6.00</h6>
+      </div>
+      <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+  
+
+
+
+
+<!-- shop-item-4 modal-4 -->
+
+<div class="shop-item">
+  <div class="shop-image">
+    <img src="/img/bags-13.jpg" class="modal-open" data-modal="modal4"></img>
+    <div class="add-product modal-open" data-modal="modal10">
+      <span><i class="fas fa-plus fa-2x"></i></span>
+     <h6 class="add-product-title">Add product</h6>       
+    </div>     
+  </div>            
+  <div class="shop-item-description">          
+    <h5 class="shop-item-name">Mother Earth</h5>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <div class="shop-item-commission">
+      <h6>You earn</h6>
+      <h6>$0.45</h6>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal4">
+<div class="modal-content">
+<button class="icon modal-close">&#10005;</button>
+<div class="modal-body">
+  <section id="section-slider">
+    <div id='slider-container'>
+            <div id="slider-3">
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-24.jpg">
+                   <p class="img-number">1/2</p> 
+                </div>
+                <div class="img-slider">
+                   <img src="/shop-glider/glider-25.jpg">
+                   <p class="img-number">2/2</p> 
+                </div>                                     
+            </div>
+        <button id="prev-3"><i class="fas fa-chevron-left fa-2x"></i></button>
+        <button id="next-3"><i class="fas fa-chevron-right fa-2x"></i></button>
+    </div>
+</section> 
+  <div class="shop-popup-content">
+    <h6 class="popup-name">Mother Earth</h6>
+    <div class="item-by">
+      <small>Sold by</small>
+      <h6>Dust City Wood Stickers</h6>
+    </div>
+    <p>We are committed to creating a sustainable future, both with our products as well as our business practices. We kind of got a thing for wood so we do everything we can to make sure there’s plenty of it for years to come! <br><br>
+
+      Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!<br><br>
+      
+      Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+      
+      Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+      
+      Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+      
+      The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+      
+    </p>
+    <div class="shop-item-price">
+      <h6>Price</h6>
+      <h6>$6.00</h6>
+    </div>
+    <button class="shop-popup-btn">Sign In</button>
+    <div class="no-account">
+      <p>Don't have an account?</p>
+      <a href="/">Join the waitlist</a>
+    </div>
+  </div>
+</div>     
+</div>
+</div>
+  <!-- shop-item-3 -modal-3 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-12.jpg" class="modal-open" data-modal="modal3"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Nerd</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal3">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-2">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-22.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-23.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+                         
+              </div>
+          <button id="prev-2"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-2"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Nerd</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>Our custom designed totes are perfect for a weekend gateway</p>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <p class="sign-in-desc">Only true nerds actually know what NASA stands for... Or people who are really into science. <br><br>
+
+        (Basically the same thing, right?) <br><br>
+        
+        ((It's The National Aeronautics and Space Administration))<br><br>
+        
+        Product Info: <a href="#"> Click here</a> to learn all about Wood Stickers™ – how they’re made, what you can use them for, and <a href="#">more!</a> <br><br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.<br><br>
+        
+        Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately 3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag. <br><br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.<br><br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!<br><br>
+        
+      </p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+
+
+      <!-- shop-item-1 -->
+      <div class="shop-item">
+        <div class="shop-image">
+          <img src="/img/bags-10.jpg" class="modal-open" data-modal="modal1"></img>
+          <div class="add-product modal-open" data-modal="modal10">
+            <span><i class="fas fa-plus fa-2x"></i></span>
+           <h6 class="add-product-title">Add product</h6>       
+          </div>     
+        </div>            
+        <div class="shop-item-description">          
+          <h5 class="shop-item-name">Wash Your Hands</h5>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <div class="shop-item-commission">
+            <h6>You earn</h6>
+            <h6>$0.45</h6>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- shop-item-1-modal -1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="icon modal-close">&#10005;</button>
+      <div class="modal-body">
+        <section id="section-slider">
+          <div id='slider-container'>
+                  <div id="slider">
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-18.jpg">
+                         <p class="img-number">1/2</p> 
+                      </div>
+                      <div class="img-slider">
+                         <img src="/shop-glider/glider-19.jpg">
+                         <p class="img-number">2/2</p> 
+                      </div>               
+                  </div>
+              <button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
+              <button id="next"><i class="fas fa-chevron-right fa-2x"></i></button>
+          </div>
+      </section> 
+        <div class="shop-popup-content">
+          <h6 class="popup-name">Wash your Hands</h6>
+          <div class="item-by">
+            <small>Sold by</small>
+            <h6>Dust City Wood Stickers</h6>
+          </div>
+          <p>
+            Please? Submitted by Lilly Luke. <br><br>
+
+            Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more! <br><br>
+            
+            Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color. <br><br>
+            
+            Sticker Dimensions & Packaging: Each Wood Sticker Measures Approximately  3"x 3" with a plant based and biodegradable 3M adhesive backing. Our Wood Stickers also each come in a compostable cellulose bag and recycled paper hang tag.  <br><br>
+            
+            Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping. <br><br>
+            
+            The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more! <br><br>
+            
+          </p>
+          <div class="shop-item-price">
+            <h6>Price</h6>
+            <h6>$6.00</h6>
+          </div>
+          <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+          <button class="shop-popup-btn">Sign In</button>
+          <div class="no-account">
+            <p>Don't have an account?</p>
+            <a href="/">Join the waitlist</a>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <!-- shop-item-2 -modal-2 -->
+  <div class="shop-item">
+    <div class="shop-image">
+      <img src="/img/bags-11.jpg" class="modal-open" data-modal="modal2"></img>
+      <div class="add-product modal-open" data-modal="modal10">
+        <span><i class="fas fa-plus fa-2x"></i></span>
+       <h6 class="add-product-title">Add product</h6>       
+      </div>     
+    </div>            
+    <div class="shop-item-description">          
+      <h5 class="shop-item-name">Cross Sugar Skull</h5>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>$6.00</h6>
+      </div>
+      <div class="shop-item-commission">
+        <h6>You earn</h6>
+        <h6>$0.45</h6>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="modal2">
+<div class="modal-content">
+  <button class="icon modal-close">&#10005;</button>
+  <div class="modal-body">
+    <section id="section-slider">
+      <div id='slider-container'>
+              <div id="slider-1">
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-20.jpg">
+                     <p class="img-number">1/2</p> 
+                  </div>
+                  <div class="img-slider">
+                     <img src="/shop-glider/glider-21.jpg">
+                     <p class="img-number">2/2</p> 
+                  </div>               
+              </div>
+          <button id="prev-1"><i class="fas fa-chevron-left fa-2x"></i></button>
+          <button id="next-1"><i class="fas fa-chevron-right fa-2x"></i></button>
+      </div>
+  </section> 
+    <div class="shop-popup-content">
+      <h6 class="popup-name">Cross Sugar Skull</h6>
+      <div class="item-by">
+        <small>Sold by</small>
+        <h6>Dust City Wood Stickers</h6>
+      </div>
+      <p>TA beautifully intricate sugar skull adorned with a cross. <br> <br>
+
+        Product Info: Click here to learn all about Wood Stickers™ – how they’re made, what you can use them for, and more!  <br> <br>
+        
+        Each design comes in two wood types: maple has a lighter, blonde look and cherry is a deep, rich red color.  <br> <br>
+        
+        Shipping Info: We ship all packages by US Postal Service First Class Mail.  Your Wood Stickers™ will arrive in three to five business days.  If you simply cannot wait that long to up your sticker game (don’t worry – we get it) just contact us and we’ll get you hooked up with expedited shipping.  <br> <br>
+        
+        The flat rate for shipping is $5 for one or two stickers and FREE if you order three or more!  <br> <br>
+        </p>
+        
+      <div class="shop-item-price">
+        <h6>Price</h6>
+        <h6>6.00</h6>
+      </div>
+      <p class="sign-in-desc">If you have a non-affiliate account, please sign in to add this product to your Selcouth || Shop page.</p>
+      <button class="shop-popup-btn">Sign In</button>
+      <div class="no-account">
+        <p>Don't have an account?</p>
+        <a href="/">Join the waitlist</a>
+      </div>
+    </div>
+  </div>     
+</div>
+</div>
+     </section>  
+  </div>
+  <!-- item1 script -->
+  <script>
+
+const slider = document.getElementById('slider');
+const prevSlider = document.getElementById('prev');
+const nextSlider = document.getElementById('next');
+
+
+nextSlider.addEventListener('click', (e) => {
+    slider.scrollBy(300, 0);
+});
+
+prevSlider.addEventListener('click', (e) => {
+    slider.scrollBy(-300, 0);
+});
+  </script>
+
+<!-- item-2 script -->
+  <script>
+  const slider1 = document.getElementById('slider-1');
+const prevSlider1 = document.getElementById('prev-1');
+const nextSlider1 = document.getElementById('next-1');
+
+
+nextSlider1.addEventListener('click', (e) => {
+    slider1.scrollBy(300, 0);
+});
+
+prevSlider1.addEventListener('click', (e) => {
+    slider1.scrollBy(-300, 0);
+});
+  </script>
+
+
+<!-- item-3 -->
+<script>
+  const slider2 = document.getElementById('slider-2');
+const prevSlider2 = document.getElementById('prev-2');
+const nextSlider2 = document.getElementById('next-2');
+
+
+nextSlider2.addEventListener('click', (e) => {
+    slider2.scrollBy(300, 0);
+});
+
+prevSlider2.addEventListener('click', (e) => {
+    slider2.scrollBy(-300, 0);
+});
+  </script>
+
+
+
+<!-- item-4 -->
+<script>
+  const slider3 = document.getElementById('slider-3');
+const prevSlider3 = document.getElementById('prev-3');
+const nextSlider3 = document.getElementById('next-3');
+
+
+nextSlider3.addEventListener('click', (e) => {
+    slider3.scrollBy(300, 0);
+});
+
+prevSlider3.addEventListener('click', (e) => {
+    slider3.scrollBy(-300, 0);
+});
+  </script>
+
+  <script>
+    // getting modal opening buttons
+var modalBtns = document.querySelectorAll('.modal-open')
+
+modalBtns.forEach(function(btn){
+  btn.onclick = function(){
+    var modal = btn.getAttribute('data-modal');
+
+    document.getElementById(modal).style.display = 'block';
+  };
+});
+
+var closeBtns = document.querySelectorAll('.modal-close');
+
+closeBtns.forEach(function(btn){
+  btn.onclick = function(){
+    var modal = btn.closest('.modal').style.display = 'none'
+  };
+});
+
+window.onclick = function(e){
+  if(e.target.className === 'modal'){
+    e.target.style.display = 'none'
+  }
+}
+  </script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

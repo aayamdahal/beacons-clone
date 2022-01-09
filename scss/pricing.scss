@@ -1,0 +1,356 @@
+// VARIABLES
+$main-font: 'Poppins', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
+$main-color:  rgb(0,171,108);
+$py-main :  2rem 2rem;
+$py-secondary :  2rem 2rem;
+
+
+$circle-color: rgba(221, 221, 221, 0.582);
+$circle-color-secondary-main: #ddd;
+$circle-color-secondary: rgba(221, 221, 221, 0.425);
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+body::selection{
+  color: white;
+  background: #0089f2;
+}
+body::-webkit-scrollbar{
+  width: 16px;
+}
+body::-webkit-scrollbar-track{
+  background: #e6e6e6;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb{
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: $main-color;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: $main-color;
+}
+.changelog-navbar{
+  transition: all 0.7s;
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background:rgba(177, 61, 61, 0);
+  width: 104%; 
+ 
+  .changelog-logo{
+    background: url(/img/Capture-removebg-preview.png) no-repeat 50% 50%;
+   background-size: contain;
+   width: 120px;
+   height: 40px;
+   float: left;
+   margin-left: 20px;
+  }
+ 
+  .menu{
+    position: absolute;
+    right: 20px;
+    
+    a{
+      display: inline-block;
+      font-weight: 500;
+      color: #000;
+      text-decoration: none;
+      font-family: $main-font;
+       margin-right: 55px;
+       transition: all 0.3s;
+      &:hover{
+        transform: translateY(-5px);
+        color: $main-color;
+        border-bottom: 2px solid $main-color;
+      }
+ 
+      &:active{
+        transform: translateY(3px);
+      }
+ 
+    }
+  }
+  .changelog-btn{
+    display: none;
+    position: absolute;
+    right: 20px;
+ 
+    .clg-hamburger{
+      display: block;
+      margin: 5px;
+      width: 23px;
+      height: 2px;
+      background: #000;
+    }
+  }
+ }
+
+.top-area{
+  width: 100vw;
+  padding: 4rem;
+  margin-top: 4rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  .left-part{
+    margin: 1rem;
+    width: 50vw;
+    .shopify{
+      color: #888;
+      font-family: $main-font;
+      font-size: 0.8rem;
+    }
+    p{
+      font-size: 3rem;
+      line-height: 1;
+      font-family: $main-font;
+      font-weight: 500;
+      span{
+        color: $main-color;
+      }
+    }
+    .shopify-desc{
+      margin: 2rem 0rem;
+
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+    .install{
+      font-size: 1rem;
+    }
+    .shopify-logo{
+      margin: 0.8rem;    }
+  }
+
+}
+
+
+.footer{
+  background-color: rgba(204, 204, 204, 0.13);
+  padding: 4rem;
+  font-family: $main-font;
+  a{
+    color: black;   
+     text-decoration: none;
+}
+  .footer-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+  align-items: center;
+  }
+  
+  .company-info{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .company-resources{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .company-support{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .backedby{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    a{
+      text-decoration: underline;
+    }
+    .socials{
+      
+      i{
+        transform: scale(1.3);   
+        margin: 0.5rem
+      }
+    }
+    
+  }
+
+}
+.panel-primary{
+  padding: 2rem 8rem;
+}
+.table{
+  border-radius: 15px;
+  font-family: $main-font;
+  background: #EBEEF3;
+  border: none;
+  text-align: center;
+  padding: 3rem;
+  .each-title{
+    position: relative;
+    border-top: none;
+    text-align: center;
+   .each-span{
+    font-size: 1.5rem;
+
+    }
+  .btn{
+    background-color: $main-color;
+    padding: 0.5rem 1.5rem;
+    width: fit-content;
+    color: white;
+    border-radius: 35px;
+  }
+  
+  }
+  
+  .main-heading{
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .small-heading{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  i{
+    color: #166CBF;
+  }
+  .bold{
+    font-weight: 500;
+  }
+  
+  .no-border{
+    border-top: none;
+  }
+}
+
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 1rem;
+  line-height: 1.4;
+  
+}
+
+.small{
+  line-height: 1rem;
+}
+.bg-color{
+  border-bottom: none;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+.table td, .table th {
+  border-bottom: 1px solid #ccc;
+}
+.radius{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;  
+}
+
+// switch
+.switch {
+  transform: scale(1.5);
+  font-family: $main-font;
+  position: relative;
+  height: 26px;
+  width: 120px;
+  margin: 20px auto;
+  background: #E0E4EB;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+
+  .switch-label {
+    font-family: $main-font;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 58px;
+    line-height: 26px;
+    font-size: 11px;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+  }
+  .switch-label:active {
+    font-family: $main-font;
+  }
+  
+  .switch-label-off {
+    font-family: $main-font;
+    padding-left: 2px;
+  }
+  
+  .switch-label-on {
+    font-family: $main-font;
+    padding-right: 2px;
+  }
+  
+  
+  .switch-input {
+    font-family: $main-font;
+    display: none;
+  }
+  .switch-input:checked + .switch-label {
+    font-family: $main-font;
+    color: #000;
+    transition: 0.15s ease-out;
+    transition-property: color, text-shadow;
+  }
+  .switch-input:checked + .switch-label-on ~ .switch-selection {
+    left: 60px;
+   
+  }
+  
+  .switch-selection {
+    font-family: $main-font;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 58px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #C6CEDB;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+    transition: left 0.15s ease-out;
+  }
+}
+
+#off-position{
+  position: relative;
+}
+.off{
+  position: absolute;
+  z-index:  100;
+  left: 122px;
+  top: 76px;
+  width: max-content;
+  font-size: 0.8rem;
+  background-color: #000;
+  padding: 0.3rem 0.5rem;
+  border-radius: 55px;
+  color: white;
+}
+
+
+
+
+// MEDIA QUERIES
+@import 'media(ipad)';
+@import 'media2(iphone)';
+@import 'media3';

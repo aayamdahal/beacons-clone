@@ -1,0 +1,750 @@
+
+// VARIABLES
+$main-font: 'Poppins', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
+$main-color:  rgb(0,171,108);
+$py-main :  3rem 4rem;
+
+$gradient: linear-gradient(98deg, rgba(0, 0, 0, 0.37) 26%, rgba(0, 0, 0, 0.452) 98%);
+
+$box-shadow:  0px 10px 17px -3px rgba(0,0,0,0.23);
+$box-shadow-hover: 0px 0px 17px 1px rgba(0,0,0,0.65);
+
+$card-radius: 15px;
+$transition: ease 0.3s;
+
+$translate-card: translateY(-10px);
+
+$circle-color: rgba(221, 221, 221, 0.582);
+$circle-color-secondary-main: #ddd;
+$circle-color-secondary: rgba(221, 221, 221, 0.425);
+
+$blog-animation: dropDown 0.7s ease;
+
+$card-bg: #fff;
+
+$bg-color: #111;
+$each-color: #bbb;
+// RESET
+*,
+*::after,
+*:before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-size: 62.5%;
+}
+
+
+// UTILITY 
+a{
+  text-decoration: none;
+}
+.first-section{   
+  padding: 0rem 1rem;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .logo-div{
+      animation: $blog-animation;
+
+    }
+    .blog-logo{
+      align-items: flex-end;
+      margin-right: 2rem;
+      padding-left: 2rem;
+    }
+
+   .blog-navbar-items{
+      animation: $blog-animation;
+      display: block;
+      align-self: center;
+      font-size: 1rem;
+
+      // effect button on click 
+   a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-family: $main-font;
+    font-weight: 300;
+    margin: 0.8rem;
+
+    &:hover{
+      color: $main-color;
+         }
+        } 
+      }
+    
+    }
+
+    .blog-image{
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(98deg, rgba(0,0,0,0.6) 26%, rgba(0,0,0,0.6) 98%),url('/img/blog-image.jpeg') no-repeat center center/cover;
+
+      .blog-title{
+        animation: $blog-animation;
+        width: 50%;
+        line-height: 0.5;
+        font-size: 4rem;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+      }
+      .blog-span{
+        animation:$blog-animation;
+        margin-top: 8rem;
+        font-size: 1.5rem;
+        
+      }
+    }
+
+    @keyframes dropDown{
+      0%{
+        opacity: 0;
+        transform: translateY(-150px);
+      }
+      50%{
+        opacity: 0.7;
+      }
+      100%{
+        transform: translateY(0);
+      }
+    }
+
+
+    // font awesome icon scale(navbar)
+.dropdown{
+  transform: scale(1.5);
+}
+
+
+// BLOG POST SECTION
+
+.blog-page-2{
+  background-color: $bg-color;
+  padding: $py-main;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 5rem;
+  }
+ 
+  .page-2-top{
+  border-radius: $card-radius;
+  box-shadow: $box-shadow;
+  padding: 1.5rem;
+  background: url('/img/blog-card-7.jpg') no-repeat center center/cover;
+  height: 60vh;
+  grid-column: 1 / 4;
+  grid-row: 1 /  4;
+  transition: $transition;
+  &:hover{
+    transform: $translate-card;
+    box-shadow:$box-shadow-hover;
+  }
+}
+.featured{
+  color: $each-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .avatar-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+
+    .tips{
+      color: #000;
+      font-size: 2rem;
+      font-family: $main-font;
+      font-weight: 500;
+        background-color: $each-color;
+        border-radius: 25px;
+        padding: 0.5rem;
+        letter-spacing: 1px;
+    }
+  }
+  .featured-icon{
+    background-color: white;
+    color: black;
+    margin: 1rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    font-family: $main-font;
+    border-radius: $card-radius;
+  }
+}
+.blog-card-1-title{
+  color: $each-color;;
+  text-align: left;
+  font-size: 2rem;
+  font-family: $main-font;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.traffic{
+  display: inline;
+  font-size:3rem;
+}
+.blog-card-middle{
+  color:$each-color;
+  padding: 0rem 2rem;
+}
+.blog-card-bottom{
+  display: flex;
+  justify-content: left;
+  h6{
+    font-size: 1rem;
+    color: $each-color;
+    padding: 3rem 2rem;
+    font-family: $main-font;
+    font-weight: 300;
+  }
+}
+
+// second card top section
+.page-2-top-2{
+  border-radius: $card-radius;
+  height: 60vh;
+  grid-column: 4 / 6;
+  border-radius: $card-radius;
+  box-shadow: $box-shadow;
+  transition: $transition;
+  &:hover{
+    transform: $translate-card;
+    box-shadow: $box-shadow-hover;
+  }
+  .card-2{
+    position: relative;
+    border-radius: $card-radius;
+
+  }
+  .card-2-info{
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    h5{
+      font-size: 1.5rem;
+      color: $each-color;
+      font-weight: 300;
+      font-family: $main-font;
+      text-align: center;
+    }
+    h6{
+      color: $each-color;
+      font-size: 0.8rem;
+      font-weight: 300;
+      font-family: $secondary-font;
+      text-align: left;
+      margin: 3rem 1rem;
+    }
+  }
+  .blog-card-img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  margin-bottom: 1rem;
+  
+  }
+}
+// rest of the cards
+.blog-pg2-card-container{ 
+  background-color: $bg-color;
+  display: grid;
+  padding: $py-main;
+  grid-template-columns: repeat(6, 1fr);
+
+  .blog-pg2-card{
+    border-radius: $card-radius;
+    position: relative;
+    margin: 1rem;
+    box-shadow: $box-shadow;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    gap: 5rem;
+    transition: $transition;
+    &:hover{
+      box-shadow: $box-shadow-hover;
+      transform: $translate-card;
+    }
+    .tips-card{
+      font-family: $main-font;
+      font-weight: 300;
+      color: $each-color;
+      margin-left: 1rem;
+    }
+    h5{
+      font-size: 1.5rem;
+      color: $each-color;
+      font-weight: 300;
+      font-family: $main-font;
+      text-align: left;
+      margin-left: 1rem;
+    }
+    h6{
+      color: $each-color;
+      font-size: 0.8rem;
+      font-weight: 300;
+      font-family: $secondary-font;
+      text-align: left;
+      margin: 3rem 1rem;
+    }
+  }
+  .main-card-img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  margin-bottom: 1rem;
+  }
+  .blog-pg2-card-4{
+    grid-column: 3 / 5;
+  }
+  .blog-pg2-card-5{
+    grid-column: 5 / 7;
+  }
+
+}
+.page-btn{
+  display: block;
+  background-color: $bg-color;
+  p{
+    padding: 4rem;
+    font-size: 1rem;
+    color: $each-color;
+    font-weight: 300;
+    font-family: $main-font;
+    text-align: left;
+    margin-left: 1rem;
+    text-align: center;
+  }
+  .page-arrow{
+    margin: 0 1rem;
+    padding: 0.5rem;
+    background-color: #eee;
+    box-shadow: 0px 6px 14px 2px rgba(0,0,0,0.41);
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    transform: scale(1.1);
+  }
+}
+.card-avatar{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 300px;
+}
+.card-avatar-1{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 310px;
+}
+
+// footer
+.footer{
+  background-color: black;
+  padding: 2rem;
+  text-align: center;
+
+  p{
+    margin: 2rem;
+    font-size: 0.8rem;
+    color: $each-color;
+    font-weight: 300;
+    font-family: $main-font;
+  }
+  .fb{
+    color: #3b5998;
+    margin: 1rem;
+  }
+  .twitter{
+    color: #00acee;
+  }
+}
+
+// for dropdown
+.menu{
+  background: #000;
+
+  .dropdown-container{
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    top: 60px;
+    background: #000;
+    width: 98.5vw;
+    // height: 65vh;
+  }
+  .show{
+    animation: animate 0.5s ease;
+    display: block;
+  }
+}
+// articles style of drop down
+.articles-container{
+  background-color: #111;
+  padding: 1rem;
+
+  .articles-area{
+    display: flex;
+  }
+  h5{ margin: 1rem 3rem;
+      font-size: 1rem;
+      color: #888;
+      font-weight: 600;
+      font-family: $secondary-font;
+      }
+  .each-article{
+    margin: 1rem;
+    width: fit-content;
+    padding: 1rem 1rem;
+    box-shadow: $box-shadow;
+    .article-img{
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 230px;
+      object-fit: cover;
+      height: 120px;
+      transition: ease 0.2s;
+      transform: scale(1);
+      &:hover{
+        transform: scale(1.02);
+
+      }
+    }
+    h4{
+      margin: 1rem 0rem;
+      font-size: 1rem;
+      color: #888;
+      font-weight: 300;
+      font-family: $secondary-font;
+    }
+    span{
+      color: #888;
+      font-family: $main-font;
+      font-size: 0.8rem;
+      margin: 1rem 0rem;
+    }
+    p{
+      color: rgb(41, 27, 235);
+      font-size: 1rem;
+      font-family: $main-font;
+      margin: 1rem 0rem;
+      text-align: left;
+    }   
+  }
+ .article-tags{
+   font-size: 1rem;
+   font-family: $main-font;
+   color: #ccc;
+   padding: 0rem 2rem;
+ }
+ .other-info{
+   padding: 1rem;
+   width: fit-content;
+   display: flex;
+   justify-content: space-between;
+
+   span{
+     font-family: $main-font;
+     margin-top: 1rem;
+    padding: 0rem 1rem;
+    color: rgb(50, 50, 214);
+     font-size: 0.8rem;
+   }
+ }
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+// for dropdown
+.menu{
+  background: #000;
+
+  .dropdown-container{
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    top: 60px;
+    background: #000;
+    width: 98.5vw;
+    // height: 65vh;
+  }
+  .show{
+    animation: animate 0.5s ease;
+    display: block;
+  }
+}
+// articles style of drop down
+.articles-container{
+  background-color: #111;
+  padding: 1rem;
+
+  .articles-area{
+    display: flex;
+  }
+  h5{ margin: 1rem 3rem;
+      font-size: 1rem;
+      color: #888;
+      font-weight: 600;
+      font-family: $secondary-font;
+      }
+  .each-article{
+    margin: 1rem;
+    width: fit-content;
+    padding: 1rem 1rem;
+    box-shadow: $box-shadow;
+    .article-img{
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 230px;
+      object-fit: cover;
+      height: 120px;
+      transition: ease 0.2s;
+      transform: scale(1);
+      &:hover{
+        transform: scale(1.02);
+
+      }
+    }
+    h4{
+      margin: 1rem 0rem;
+      font-size: 1rem;
+      color: #888;
+      font-weight: 300;
+      font-family: $secondary-font;
+    }
+    span{
+      color: #888;
+      font-family: $main-font;
+      font-size: 0.8rem;
+      margin: 1rem 0rem;
+    }
+    p{
+      color: rgb(41, 27, 235);
+      font-size: 1rem;
+      font-family: $main-font;
+      margin: 1rem 0rem;
+      text-align: left;
+    }    
+  }
+ .article-tags{
+   font-size: 1rem;
+   font-family: $main-font;
+   color: #ccc;
+   padding: 0rem 2rem;
+ }
+ .other-info{
+   padding: 1rem;
+   width: fit-content;
+   display: flex;
+   justify-content: space-between;
+
+   span{
+     font-family: $main-font;
+     margin-top: 1rem;
+    padding: 0rem 1rem;
+    color: rgb(50, 50, 214);
+     font-size: 0.8rem;
+   }
+ }
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.container .menu-icon{
+  position: absolute;
+  color: #000000;
+  transform:  rotate(90deg);
+  font-size: 1.5rem;
+  left: 42px;
+  top: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu-container{
+height: 0%;
+width: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+z-index: 1;
+background: rgb(0, 0, 0);
+overflow: hidden;
+transition: 0.2s ease;
+}
+.menu-content{
+padding: 2rem;
+position: relative;
+top: 5%;
+width: 100%;
+margin-top: 30px;
+
+h4{
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #808080;
+    font-family: $main-font;
+
+  }
+}
+.menu-container .closebtn{
+transform: scale(0.6);
+position: absolute;
+top: 36px;
+right: 18px;
+font-size: 30px;
+color: #f4f4f4;
+padding: 10px 20px;
+border-radius: 50%;
+border: white 3px solid;
+z-index: 1;
+cursor: pointer;
+}
+.carousel {
+  width: 90vw;
+  height: 40vh;
+  // background: #808080;
+  position: relative;
+  overflow: hidden;
+  
+}
+.carousel .track {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-flex;
+  touch-action: none;
+}
+
+.carousel .track .card-overlay {
+  width: 300px;
+  height: 300px;
+  background: #000;
+  border-radius: 3px;
+  margin: 0rem;
+}
+
+.card-overlay{
+  .res-card-img{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 80%;
+    object-fit: cover;
+    height: 140px;
+  }
+  .res-header{
+    font-family: $main-font;
+    font-weight: 300;
+    color: #0d60ff;
+  }
+  .res-avatar{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -200px;
+    right: 300px;
+  }
+  .overlay-header{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #808080;
+    font-family: $main-font;
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    }
+  .overlay-month{
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-weight: 300;
+    color: #808080;
+    font-family: $main-font;
+    text-align: left;
+    margin-left: 1rem;
+  }
+}
+.bottom-part{
+  color: white;
+  
+  p{
+    font-family: $main-font;
+    padding-left: 1rem;
+    color: #808080;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  a{
+    font-family: $main-font;
+    color: #2729B8;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+}
+
+// MEDIA QUERIES
+@import 'media(ipad)';
+@import 'media2(iphone)';
+@import 'media3';

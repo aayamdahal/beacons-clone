@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel='icon' href='../img/selcouth.png' type='img'>
+  <link rel="stylesheet" href="/css/signin.css">
+  <title>SignIn</title>
+</head>
+<body>  
+  <section class="second-section">
+      <div class="circle circle-1"></div>    
+      <div class="circle circle-2"></div>    
+      <div class="circle circle-3"></div>
+        <div class="circle-4"></div>
+        <div class="circle-5"></div>
+        <div class="circle-6"></div>
+        </div>
+        </div>      
+    </section>
+  <div class="signin-container">
+    <div class="form-area">
+      <h6 class="signin-title">Sign In</h6>
+      <p>Not sure how to Sign In?</p>
+      <button class="click" onclick="hidePage(nextPage)" id="nextBtn">Click&nbsp;<a href="#">here</a></button>
+
+
+      <!-- <i class="fab fa-google left"></i> Log In With Google -->
+      <div id="prevPage" class="first-sign-in">
+                <a href="/auth/google" class="signin-btn">
+                  <i class="fab fa-google"></i>
+                  <span>Sign in with Google</span> 
+              </a>
+              <!-- <button class="signin-btn" id="googleSignIn">
+                <i class="fab fa-google"></i>
+                <span>Sign in with Google</span> 
+                </button> -->
+                <button class="signin-btn fb-btn" onClick="signInWithFacebook()">
+                <i class="fab fa-facebook-square"></i>
+                <span>Sign in with Facebook</span>
+                  </button>
+                <h2><span>or</span></h2>  
+                <div class="box">
+                <form id="signup">
+                  <div class="input-field col s6">
+                    <input id="email" type="text" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                  </div>
+                  </form>
+                </div>
+                  <button class="signin-btn" id="signin-btn-email">
+                  <span>Sign in with Email</span>
+                  </button>
+
+                  <a href="/forgotpass" class="forgot-area center">Forgot Password</a>
+          </div> 
+            
+        
+
+
+
+          <div class="click-here-div" id="nextPage" style="display: none;">
+            <p>Enter your Selcouth username below.</p>
+            <p class="click" id="how-to">  We'll tell you how to sign in.</p>
+            <div class="box">
+              <form>               
+                <div class="input-field col s6">
+                  <input id="password" type="text" class="validate">
+                  <label>Username</label>
+                </div>
+                </form>
+              </div>
+            
+            <button class="signin-btn" id="signin-btn-email">
+                <span>Retrieve Sign in method</span>
+              </button>
+          
+
+            <button class="click" onclick="hidePage()" id="prevBtn"><a href="/signup">Back to Sign in</a></button>
+          </div>
+         
+            <p>Don't have an account?<a href="/" class="forgot-area">Join the waitlist</a></a></p>          
+          <a href="/"><div class="logo-signin">
+          <img id="selcouth" src="/img/selcouth.png" alt="">
+           </div></a>  
+     </div>  
+  </div> 
+
+
+<script>
+
+  function hidePage(){
+  var nextBtn = document.getElementById('nextBtn');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextPage = document.getElementById('nextPage');
+  var prevPage = document.getElementById('prevPage');
+
+    nextBtn.addEventListener('click',function(){
+      if(nextPage.classList.contains = 'click-here-div'){
+        prevPage.style.display = 'none';
+        nextPage.style.display = 'block';
+      }
+    });
+    
+    prevBtn.addEventListener('click', function(){
+      if(prevPage.classList.contains = 'first-sign-in'){
+        prevPage.style.display = 'block';
+        nextPage.style.display = 'none';
+
+      }
+      
+    });
+   
+  }
+  hidePage();
+</script> 
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyDkFrGVVYH6JdSG5IfRmDjtqRAKCCunfug",
+          authDomain: "beacons-c9136.firebaseapp.com",
+          databaseURL: "https://beacons-c9136.firebaseio.com",
+          projectId: "beacons-c9136",
+          storageBucket: "beacons-c9136.appspot.com",
+          messagingSenderId: "2191567432",
+          appId: "1:2191567432:web:034fb9b076e9d1c00a467d",
+          measurementId: "G-73LFJ2NTFB",
+        };
+ 
+        firebase.initializeApp(firebaseConfig);
+ 
+        firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE);
+ 
+        // User Email Login
+        document
+          .getElementById("signup")
+          .addEventListener("submit", (event) => {
+            event.preventDefault();
+            const login = event.target.login.value;
+            const password = event.target.password.value;
+ 
+            firebase
+              .auth()
+              .createUserWithEmailAndPassword(login, password)
+              .then(({ user }) => {
+                return user.getIdToken().then((idToken) => {
+                  return fetch("/sessionLogin", {
+                    method: "POST",
+                    headers: {
+                      Accept: "application/json",
+                      "Content-Type": "application/json",
+                      "CSRF-Token": Cookies.get("XSRF-TOKEN"),
+                    },
+                    body: JSON.stringify({ idToken }),
+                  });
+                });
+              })
+              .then(() => {
+                return firebase.auth().signOut();
+              })
+              .then(() => {
+                window.location.assign("/");
+              });
+            return false;
+          });
+ 
+        // // Google Sign In
+        // const signInWithGoogle = async () => {
+        //   var provider = new firebase.auth.GoogleAuthProvider();
+        //   await firebase
+        //     .auth()
+        //     .signInWithPopup(provider)
+        //     .then((result) => {
+        //       // This gives you a Google Access Token. You can use it to access the Google API.
+        //       var token = result.credential.accessToken;
+        //       // authenticating with credentials
+        //       firebase
+        //         .auth()
+        //         .signInWithCredential(result.credential)
+        //         .then(({ user }) => {
+        //           return user.getIdToken().then((idToken) => {
+        //             return fetch("/sessionLogin", {
+        //               method: "POST",
+        //               headers: {
+        //                 Accept: "application/json",
+        //                 "Content-Type": "application/json",
+        //                 "CSRF-Token": Cookies.get("XSRF-TOKEN"),
+        //               },
+        //               body: JSON.stringify({ idToken }),
+        //             });
+        //           });
+        //         })
+        //         .then(() => {
+        //           window.location.assign("/");
+        //           alert("You are Signed In")
+        //         });
+        //     })
+        //     .catch(function (error) {
+        //       // Handle Errors here.
+        //       var errorCode = error.code;
+        //       var errorMessage = error.message;
+        //       // The email of the user's account used.
+        //       var email = error.email;
+        //       // The firebase.auth.AuthCredential type that was used.
+        //       var credential = error.credential;
+        //       if (
+        //         errorCode === "auth/account-exists-with-different-credential"
+        //       ) {
+        //         alert("Email already associated with another account.");
+        //         // Handle account linking here, if using.
+        //       } else {
+        //         console.error(error);
+        //       }
+        //     });
+        // };
+ 
+        // Facebook Sigin
+        const  signInWithFacebook = async () =>  {
+          var provider = new firebase.auth.FacebookAuthProvider();
+            await
+            firebase
+            .auth()
+            .signInWithPopup(provider).then((result) => {
+              // This gives you a Google Access Token. You can use it to access the Google API.
+              var token = result.credential.accessToken;
+              // authenticating with credentials
+              firebase
+                .auth()
+                .signInWithCredential(result.credential)
+                .then(({ user }) => {
+                  return user.getIdToken().then((idToken) => {
+                    return fetch("/sessionLogin", {
+                      method: "POST",
+                      headers: {
+                        Accept: "application/json",
+                        "Content-Type": "application/json",
+                        "CSRF-Token": Cookies.get("XSRF-TOKEN"),
+                      },
+                      body: JSON.stringify({ idToken }),
+                    });
+                  });
+                })
+                .then(() => {
+                  window.location.assign("/");
+                  alert("You are Signed In")
+                });
+            })
+            .catch(function (error) {
+              // Handle Errors here.
+              var errorCode = error.code;
+              var errorMessage = error.message;
+              // The email of the user's account used.
+              var email = error.email;
+              // The firebase.auth.AuthCredential type that was used.
+              var credential = error.credential;
+              if (
+                errorCode === "auth/account-exists-with-different-credential"
+              ) {
+                alert("Email already associated with another account.");
+                // Handle account linking here, if using.
+              } else {
+                console.error(error);
+              }
+            });
+        };
+        // document
+        //   .querySelector("#googleSignIn")
+        //   .addEventListener("click", (event) => {
+        //     event.preventDefault();
+        //     console.log("working!");
+        //     signInWithGoogle();
+        //   });
+      </script>
+  </body>
+</html>
+        
